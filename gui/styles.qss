@@ -1,0 +1,101 @@
+/* Main window background */
+QMainWindow {
+    background-color: #A7A9AC; /* modern dark background */
+    color: #FFFFFF;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12pt;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: none;
+}
+QTabBar::tab {
+    background: #1E1E1E;
+    padding: 10px 16px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background: #E00122; /* UC Red */
+    color: #FFFFFF;
+    font-weight: bold;
+}
+QTabBar::tab:hover {
+    background: #A7A9AC; /* UC Gray */
+}
+
+/* GroupBox */
+QGroupBox {
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #3A3A3A;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 8px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    padding: 4px 8px;
+    color: #E00122; /* UC Red title accent */
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #E00122; /* UC Red */
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #C0001C; /* Darker UC Red */
+}
+QPushButton:pressed {
+    background-color: #9B0016;
+}
+
+/* Labels */
+QLabel {
+    color: #020101ff;
+    font-size: 12pt;
+}
+
+/* ComboBox */
+QComboBox {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #3A3A3A;
+    padding: 6px;
+    border-radius: 6px;
+}
+QComboBox:hover {
+    border: 1px solid #E00122;
+}
+
+/* SpinBox */
+QSpinBox, QDoubleSpinBox {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #3A3A3A;
+    padding: 6px;
+    border-radius: 6px;
+}
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border: 1px solid #E00122;
+}
+
+/* QListWidget */
+QListWidget {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #3A3A3A;
+    border-radius: 6px;
+}
+QListWidget::item:selected {
+    background-color: #E00122;
+    color: #FFFFFF;
+}
